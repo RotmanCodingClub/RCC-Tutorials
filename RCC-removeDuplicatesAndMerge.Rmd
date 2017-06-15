@@ -1,5 +1,23 @@
 Simple code showing off a couple of functions
 
+Download Git.
+Set configurations with
+git config --global user.email "email@gmail.com"
+git config --global user.name "username"
+
+Open R.
+File>New Project?Version Controlled> GIT
+
+Create repository in github if you do not already have one.
+Paste repository URL into where GIT request it. 
+
+Write your code. Whenever you want to save, version control, and SHARE follow these steps
+1. Save code
+2. Git tab (next to environment and history) > select boxes > commit > in new window write a commit message > hit commit > hit push. 
+
+Check github page to see it worked!
+
+
 Duplicated Function - Example ofuse that removes duplicates and adds to a new df
 ```{r}
 carsNoDuplicateSpeeds <- cars[!duplicated(cars$speed),]
