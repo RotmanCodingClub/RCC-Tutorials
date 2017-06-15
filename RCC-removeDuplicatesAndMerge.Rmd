@@ -1,0 +1,17 @@
+Simple code showing off a couple of functions
+
+Duplicated Function - Example ofuse that removes duplicates and adds to a new df
+```{r}
+carsNoDuplicateSpeeds <- cars[!duplicated(cars$speed),]
+```
+
+
+Merge function. - 
+```{r}
+carsToMerge <- cbind(carsNoDuplicateSpeeds, seq(1:length(carsNoDuplicateSpeeds$speed)))
+carsToMerge <- carsToMerge[,c(1,3)]
+cars <- cars
+
+mergedcars <- merge(x = cars, y = carsToMerge, by = "speed", all = TRUE)
+```
+
